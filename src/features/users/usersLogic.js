@@ -28,7 +28,6 @@ export default kea({
             _users.entities[id] = user
           })
         }
-        console.log('setUsers: ', users, _users)
       }),
       setStatus: immerify((_notifications, { status }) => {
         _notifications.status = status

@@ -21,7 +21,6 @@ export const ReactionButtons = ({ post }) => {
         type="button"
         className="muted-button reaction-button"
         onClick={() => {
-          console.log("reactionAdded clicked", post.id, name)
           reactionAdded(post.id, name)
         }
         }

@@ -34,11 +34,9 @@ export default kea({
                         _posts.entities[id] = post
                     })
                 }
-                console.log('setPosts: ', posts, _posts)
                 return _posts
             }),
             setStatus: immerify((_posts, { status }) => {
-                console.log('setStatus: ', status, _posts)
                 _posts.status = status
             }),
             reactionAdded: immerify((_posts, {postId, reaction}) => {
@@ -65,7 +63,6 @@ export default kea({
                 }
             }),
             postUpdated: immerify((_posts, updatedPost) => {
-                console.log("posts.postUpdated", updatedPost)
                 const id = updatedPost.id
                 const post = _posts.entities[id]
                 if (post) {
@@ -78,7 +75,6 @@ export default kea({
     }),
     selectors: ({ selectors }) => ({
         selectPostIds: [() => [selectors.posts], (posts) => {
-            //console.log('selectors: selectPostIds', posts)
             return posts.ids
         }],
         selectAllPosts: [() => [selectors.posts], (posts) => {

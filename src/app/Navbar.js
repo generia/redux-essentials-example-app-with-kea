@@ -37,7 +37,7 @@ export const Navbar = () => {
     <nav>
       <section>
         <h1>Redux Quick Start Example</h1>
-        <p>build with <a href="https://kea.js.org">kea</a> based on <a href="https://github.com/reduxjs/redux-essentials-example-app">redux-toolkit example</a></p>
+        <p>build with <a href="https://kea.js.org">Kea</a> based on <a href="https://github.com/reduxjs/redux-essentials-example-app">Redux Toolkit example</a></p>
         <div className={styles.navContent}>
           <div className={styles.navLinks}>
             <Link to="/">Posts</Link>

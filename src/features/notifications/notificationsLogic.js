@@ -29,7 +29,6 @@ export default kea({
             _notifications.entities[id] = notification
           })
         }
-        console.log('setNotifications: ', notifications, _notifications)
       }),
       setStatus: immerify((_notifications, { status }) => {
         _notifications.status = status
@@ -43,9 +42,7 @@ export default kea({
   }),
   selectors: ({ selectors }) => ({
     selectAllNotifications: [() => [selectors.notifications], (notifications) => {
-      const v = Object.values(notifications.entities)
-      console.log("selectAllNotifications", v)
-      return v
+      return Object.values(notifications.entities)
     }]
   }),
   listeners: ({ selectors, actions }) => ({
@@ -60,7 +57,7 @@ export default kea({
       actions.setStatus('succeeded')
     },
     setStatus: (payload) => {
-      console.log("listeners.setStatus", payload)
+      //console.log("listeners.setStatus", payload)
       /*
       Object.values(state.entities).forEach((notification) => {
         notification.isNew = !notification.read
