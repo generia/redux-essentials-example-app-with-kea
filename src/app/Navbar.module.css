@@ -1,0 +1,36 @@
+nav p {
+  color: #cccccc;
+}
+
+nav p a {
+  text-decoration: underline;
+  padding: 0;
+  background-color: transparent;
+}
+
+nav p a:first-of-type {
+  margin-left: 0;
+}
+
+.navContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navLinks a {
+  margin-left: 5px;
+}
+
+.navLinks a :global(.badge) {
+  margin-left: 5px;
+  position: relative;
+  top: -3px;
+}
+
+.navLinks {
+  display: flex;
+}
+
+.navLinks :first-child {
+  margin-left: 0;
+}

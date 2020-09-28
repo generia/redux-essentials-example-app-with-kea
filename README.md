@@ -1,4 +1,11 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Redux Essentials Tutorial Example with Kea
+
+This is a showcase to compare [Kea](https://kea.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/)  as Redux abstraction frameworks.
+
+It is a port of the [redux-essentials-example-app](https://github.com/reduxjs/redux-essentials-example-app) project described in the  [Redux tutorial](https://redux.js.org/tutorials/essentials/part-3-data-flow). It removes the [Redux Toolkit](https://redux-toolkit.js.org/) dependency and uses [Kea](https://kea.js.org/) as Redux abstraction layer instead.
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Kea](https://kea.js.org/).
+
 
 ## Available Scripts
 

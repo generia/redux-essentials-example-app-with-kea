@@ -1,0 +1,81 @@
+body,
+html {
+    height: 100%;
+}
+body {
+    user-select: none;
+    color: #1e1e1e;
+    font-family: "Poiret One", cursive;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: flex-start;
+    width: 100%;
+    /* margin: 50px auto; */
+    /* height: 100%; */
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: flex-start;
+    width: 100%;
+    margin: 50px auto;
+}
+
+span {
+    display: inline-block;
+    font-size: 50px;
+    text-align: center;
+    line-height: 100px;
+    width: 100px;
+}
+
+button {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 75px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 20px 20px -15px rgba(42, 51, 59, 0.7),
+    inset 0 -5px rgba(42, 51, 59, 0.4);
+    transition: all 0.1s cubic-bezier(0, 0.35, 0.5, 1);
+    /* display: block; */
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    outline: none;
+    border: 0;
+}
+button:hover {
+    transform: scale(1.1);
+}
+button:active {
+    box-shadow: 0 20px 20px -20px rgba(42, 51, 59, 0.7),
+    inset 0 -5px rgba(42, 51, 59, 0.4);
+    top: 5px;
+}
+.red {
+    background-color: #e91e1e;
+}
+.blue {
+    background-color: #1fa1f1;
+}
+.magenta {
+    background-color: #e12977;
+}
